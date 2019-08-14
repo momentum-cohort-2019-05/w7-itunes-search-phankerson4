@@ -24,10 +24,9 @@ button.addEventListener('click', (e) =>{
             </div>
            
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">${song.trackCensoredName}<i class="material-icons right">more_vert</i></span>
-              <p>${song.artistname}</p>
+              <span class="card-title activator grey-text text-darken-4">${song.collectionCensoredName}<i class="material-icons right">more_vert</i></span>
               
-              
+              <p>${song.trackCensoredName}</p>
               
             </div>
             <div class="play-song">
@@ -35,7 +34,7 @@ button.addEventListener('click', (e) =>{
             <div class="card-reveal">
               <span class= "card-title grey-text text-darken-4">${song.collectionCensoredName}<i class="material-icons right">close</i></span>
               <p>Genre:${song.primaryGenreName}</p>
-              <p></p>
+              
               
             </div>
             </div>
@@ -53,7 +52,8 @@ button.addEventListener('click', (e) =>{
         
         .catch(error => console.log(error))
       })
-    
+
+
     
     
     
